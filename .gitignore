@@ -6,4 +6,7 @@
 # Obsidian's own soft-delete folder
 .trash/
 
+# Symlink to the aziz-engineering-brain repo, which versions itself
+notes/engineering-brain
+
 .DS_Store

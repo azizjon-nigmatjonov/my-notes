@@ -24,6 +24,12 @@ Use them:
 | `archive/` | Superseded notes. Nothing is ever deleted, only moved here. |
 | `attachments/` | Images, PDFs, and other binaries. |
 
+`notes/engineering-brain/` is a **symlink** to `../../aziz-engineering-brain`, a
+separate git repo with its own GitHub remote. Obsidian reads it like any other
+folder, but this vault's git ignores it — commit changes there from its own
+directory, not from here. `dashboard-brain` depends on that repo's original path,
+so do not move or rename it.
+
 ## Conventions
 
 - Every note starts with frontmatter carrying `title`, `created` (`YYYY-MM-DD`), and `tags`.
