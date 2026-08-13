@@ -23,6 +23,7 @@ Use them:
 | `notes/` | The real vault. Topic folders live inside. |
 | `archive/` | Superseded notes. Nothing is ever deleted, only moved here. |
 | `attachments/` | Images, PDFs, and other binaries. |
+| `vaults/` | Additional Obsidian vaults. New vaults go here, one folder each. |
 
 `notes/engineering-brain/` is a **symlink** to `../../aziz-engineering-brain`, a
 separate git repo with its own GitHub remote. Obsidian reads it like any other
@@ -42,6 +43,9 @@ so do not move or rename it.
 ## Rules
 
 - Never edit anything in `.obsidian/` — that is app configuration.
+- Never create a new vault outside `vaults/`. Every new vault Claude opens or
+  creates lives in `vaults/<Vault Name>/` — never at the repo root, never
+  elsewhere on disk.
 - Never delete a note. Move it to `archive/` instead.
 - Never rewrite a note's prose wholesale unless asked; these are the user's own words.
 - Commit before any operation that touches more than a handful of notes.
