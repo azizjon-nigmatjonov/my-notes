@@ -9,3 +9,4 @@ tags:
 
 ## Notes
 - life is too short to waste it with ordinary things
+- Abdulaziz is lazy boy
